@@ -1,8 +1,8 @@
-﻿define e = Character("Elsoul")
-define a = Character("Anina")
-define n = Character("Narrator")
-define o = Character("Oskar")
-define p = Character("parents")
+﻿define e = Character("Elsoul", who_color="#ffffff")
+define a = Character("Anina", who_color="#008000")
+define n = Character("Narrator", who_color="#ff0000")
+define o = Character("Oskar", who_color="#7fffd4")
+define p = Character("parents", who_color= "#800080")
 define gui.text_size = 28
 
 # The game starts here.
@@ -12,12 +12,12 @@ label start:
         size(1920,1080)        
        
     show anna
-    e "Anina, where are you?"
+    a "Elsoul, where are you?"
     #Players can choose whether to answer or not
     #Not answering would lead players to go back to sleep and wake up with anna being dead
 
     menu:
-        "Should elsoul go with anina?"
+        "Should elsoul wake up and go with anina?"
 
         "Yes":
             jump go_with_anina
@@ -35,10 +35,11 @@ label start:
 
 
 label go_with_anina:
-
+    scene bg young elsoul:
+        size(1920,1080)
     e "im right behind you silly"
-    a " Ok let me make snow piles so we can jump on it "
-    e "I'll jump while you make them"
+    a "Oo you scared me, please play with me in the living room "
+    e "I'll jump while you make snow mountains"
     n "Elsoul is going quite fast, someone might get hurt"
 
     menu:
@@ -53,7 +54,6 @@ label go_with_anina:
     #Renpy reads the script top to bottom, if a return isn't placed the options yes and no would both print 
 
 label no_go_anina:
-
     e "ZZZZZZZZZZZ"
     "The Next Day "
     e "Arugh, Good morning eveybody"
