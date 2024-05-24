@@ -1,0 +1,13 @@
+Identifier	Character	Dialogue	Filename	Line Number	Ren'Py Script
+start_ff11f079	e	Anina, where are you?	game/script.rpy	15	e "[what]"
+go_with_anina_fd2a924a	e	im right behind you silly	game/script.rpy	39	e "[what]"
+go_with_anina_a0472b12	a	 Ok let me make snow piles so we can jump on it 	game/script.rpy	40	a "[what]"
+go_with_anina_e65ac66b	e	I'll jump while you make them	game/script.rpy	41	e "[what]"
+go_with_anina_d097be24	n	Elsoul is going quite fast, someone might get hurt	game/script.rpy	42	n "[what]"
+no_go_anina_2c350064	e	ZZZZZZZZZZZ	game/script.rpy	57	e "[what]"
+no_go_anina_5c70150c		The Next Day 	game/script.rpy	58	"[what]"
+no_go_anina_a56c1d29	e	Arugh, Good morning eveybody	game/script.rpy	59	e "[what]"
+no_go_anina_54b62b7f	e	wait, where's anina 	game/script.rpy	60	e "[what]"
+no_go_anina_d642c292	p	Anina is dead sweetheart	game/script.rpy	61	p "[what]"
+go_anina_8546133d	n	anina hits elsoul with an icicle	game/script.rpy	66	n "[what]"
+go_anina_08dc3b61	a	Oh no what did I do	game/script.rpy	67	a "[what]"
