@@ -20,10 +20,10 @@ label start:
     menu:
         "Should elsoul wake up and go with anina?"
 
-        "Yes":
+        "Wake up":
             jump go_with_anina
 
-        "No":
+        "Continue sleeping":
             jump no_go_anina
 
     #"fake sleep.": if yes_sleep
@@ -42,14 +42,10 @@ label go_with_anina:
 
     e "Don't worry, I'll be your supervisor. Let's see what you've got!"
 
-    e "I'll jump while you make snow mountains"
-
-    n "Elsoul is jumping quite fast, someone might get hurt"
-
-
+    e "We can make castles and have fun"
 
     menu:
-        "Anina is struggling to catch up to Elsoul. Stop or continue playing"
+        "This is a dangerous choice. Stop or continue playing:"
 
         "continue playing":
             jump go_anina
@@ -69,6 +65,7 @@ label no_go_anina:
     p "Anina is dead sweetheart"
 
     e "How?? What happened"
+
     n "Anina unfortunately died because she froke her own body to death in her sleep"
 
     return
@@ -79,6 +76,7 @@ label go_anina:
     a "Thanks, Elsoul! It's so fun to play with you like this. Let's make a big ice castle!"
 
     e "Yeah! This is gonna be the best castle ever! But be careful with your ice powers, Anina. Mom said we can't make a mess in the living room."
+
     a "Don't worry, I'll be super careful. Oops! Uh-oh, did I shoot too fast?"
 
     e "Anina, look out!"
@@ -89,24 +87,26 @@ label go_anina:
 
     a "No, no, no! Elsoul, hold on! I didn't mean to! Mom! Dad! Help!"
 
-    P "WHAT DID YOU DO!!!"
-
-   
-   
-   
     menu:
-        "Anina's parents will ground her for the rest of her life"
-
-        "Run away":
+        "Elsoul got hurt, anina will be blamed:"
+        "Run":
             jump ran_away
-
         "Stay":
             jump run_away 
     return
 
 
 label ran_away:
-    a "IM out of here"
+    a "I need to leave"
+    p "You better not "
+    n "Anina runs out of their house "
+    a "I have to go away"
+    o "Hi who are you"
+    a "Im anina "
+    #Anina goes off to make a house in the forest
+    a "I love living here"
+    
 
+    return
 label run_away:
-    a "im never leaving "
+    a "I'm sorry Elsoul "

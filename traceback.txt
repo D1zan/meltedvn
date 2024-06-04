@@ -1,22 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 58, in script
-    jump no_anina
-ScriptError: could not find label 'no_anina'.
+  File "game/script.rpy", line 94, in script
+    P "WHAT DID YOU DO!!!"
+Exception: Sayer 'P' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 58, in script
-    jump no_anina
-  File "C:\Users\techstudent\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1698, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\techstudent\Desktop\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'no_anina'.
+  File "game/script.rpy", line 94, in script
+    P "WHAT DID YOU DO!!!"
+  File "C:\Users\techstudent\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\techstudent\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\techstudent\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'P' is not defined.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 Melted 1.0
-Mon Jun  3 13:18:44 2024
+Tue Jun  4 11:09:24 2024
