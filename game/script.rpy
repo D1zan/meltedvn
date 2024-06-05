@@ -4,11 +4,13 @@ define n = Character("Narrator", who_color="#ff0000")
 define o = Character("Oskar", who_color="#7fffd4")
 define p = Character("Parents", who_color= "#800080")
 define gui.text_size = 28
+define config.name = _('Melted')
+
 
 # The game starts here.
 label start:
 
-    scene bg snowy forest:
+    scene bg snowy living room:
         size(1920,1080)        
        
     show anna
@@ -101,12 +103,20 @@ label ran_away:
     p "You better not "
     n "Anina runs out of their house "
     a "I have to go away"
+    n "Anina is out of her house far in the forest"
     o "Hi who are you"
     a "Im anina "
+    "10 years go by"
     #Anina goes off to make a house in the forest
     a "I love living here"
+    n "Elsoul shoots Anina"
+    a "What are you doing here, i thought you were dead "
     
 
     return
 label run_away:
     a "I'm sorry Elsoul "
+    p "Now we have to kill you, your a disgrace to this family"
+    a "WHAT I AM YOUR DAUGHTER"
+    p "Not anymore"
+    n "Parents find a knife and chase anina around their house"
