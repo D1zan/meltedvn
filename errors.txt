@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 95: choice menuitem expects a non-empty block.
-    "Elsoul got hurt, anina will be blamed":
-                                            ^
+File "game/script.rpy", line 129: end of line expected.
+    jump hide_bed:
+                 ^
+
+File "game/script.rpy", line 131: end of line expected.
+    jump hide_stairs:
+                    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Jun  4 12:12:50 2024
+Thu Jun  6 10:06:14 2024
