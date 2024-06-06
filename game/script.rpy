@@ -3,20 +3,17 @@ define a = Character("Anina", who_color="#008000")
 define n = Character("Narrator", who_color="#ff0000")
 define o = Character("Oskar", who_color="#7fffd4")
 define p = Character("Parents", who_color= "#800080")
+define l = Character("Police", who_color= "#080437")
 define gui.text_size = 28
 define config.name = ('Melted')
-
-
-
-
-# The game starts here.
+#Game starts here 
 label start:
 
 # scene bg snowy living room:
 #size(1920,1080)        
        
     show anna
-    a "Elsoul, can we practice your powers a little?"
+    a "Elsoul, can we practice my powers a little?"
 
     #Players can choose whether to answer or not
     #Not answering would lead players to go back to sleep and wake up with anina being dead
@@ -29,14 +26,6 @@ label start:
 
         "Continue sleeping":
             jump no_go_anina
-
-    #"fake sleep.": if yes_sleep
-
-    # "Go with Anina": if no_sleep
-
-    #Anina and Elsoul are playing in their rooms at night 
-    #They walk towards their living room to play with elsouls sn
-    # This ends the game.
 
 
 label go_with_anina:
@@ -62,17 +51,12 @@ label go_with_anina:
 label no_go_anina:
     e "ZZZZZZZZZZZ"
 
-    e "Arugh, Good morning eveybody"
+    p "Elsoul wake up, where is your sister?"
 
-    e "wait, where's anina "
+    e "im not sure, I've been sleeping."
 
-    p "Anina is dead sweetheart"
-
-    e "How?? What happened"
-
-    n "Anina unfortunately died because she froke her own body to death in her sleep"
-
-    return
+    
+return
 
 label go_anina:
     e "Whoa, Anina, your ice powers are amazing! Look at this icy blast!"
@@ -101,27 +85,40 @@ label go_anina:
 
 
 label ran_away:
-    a "I need to leave"
-    p "You better not "
-    n "Anina runs out of their house "
-    a "I have to go "
-    n "Anina is out of her house far in the forest"
-    o "Hi who are you"
-    a "Im anina "
+    a "I need to leave."
+
+    p "You better not!!"
+
+    n "Anina runs out of their house. "
+
+    a "I have to go. "
+
+    n "Anina is out of her house far in the forest."
+
+    o "Hi who are you?"
+
+    a "Im anina. "
+
     "10 years go by"
     #Anina goes off to make a house in the forest
-    a "I love living here"
-    n "Elsoul shoots Anina"
-    a "What are you doing here, i thought you were dead "
+    a "I love living here."
+
+    n "Elsoul shoots Anina."
+
+    a "What are you doing here, i thought you were dead. "
     
 
     return
 label run_away:
-    a "I'm sorry Elsoul "
-    p "Now we have to kill you, your a disgrace to this family"
-    a "WHAT? I AM YOUR DAUGHTER"
-    p "Not anymore"
-    n "Parents find a knife and chase anina around their house"
+    a "I'm sorry Elsoul. "
+
+    p "Now we have to kill you, your a disgrace to this family."
+
+    a "WHAT? I AM YOUR DAUGHTER."
+
+    p "Not anymore."
+
+    n "Parents find a knife and chase anina around their house."
 
     menu: 
         "Anina now has to hide"
@@ -132,17 +129,39 @@ label run_away:
     return
 
 label hide_bed:
-    n "Anina is now under her bed"
+    n "Anina is now under her bed."
+
+    a "I did not know I had all of this stuff under here."
+
+    p "Anina, where are youu...."
+
+    a "Woah, I can't believe I have this knife from elsoul under my bed. I can use it."
+
+    n "Anina's parents are in the kitchen, nowhere near her rooom."
+
+    a "Maybe I have a chance to survive if I build a fort behind my door."
+
+    n "Anina piles furniture behind her bedroom door."
 
 label hide_stairs:
-    n "Anina is now under the stairs"
-    p "Anina where are you"
-    "Her parents are walking on the stairs, on top of Anina"
-    a "Hopefully they won't find me here"
-    p "We will find you and kill you"
-    "Anina's parents fall through the steps"
-    p "Ha found you"
-    "Her parents found her"
-    a "No please don't kill me, I love you"
-    p "Too bad"
-    "Anina is killed"
+    n "Anina is now under the stairs."
+
+    p "Anina where are youuu...."
+
+    "Her parents are walking on the stairs, on top of Anina."
+
+    a "Hopefully they won't find me here."
+
+    p "We will find you and kill you."
+
+    "Anina's parents fall through the steps."
+
+    p "Ha found you."
+
+    "Her parents found her."
+
+    a "No please don't kill me, I love you."
+
+    p "Too bad."
+
+    "Anina is killed."
